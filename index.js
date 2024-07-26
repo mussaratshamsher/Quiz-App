@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 let studentName = await inquirer.prompt([
     {
@@ -12,7 +13,7 @@ let studentName = await inquirer.prompt([
         },
     }
 ]);
-console.log("Instructions:\n  1.Selct an answer using arrow keys up & down.");
+console.log("\n  Instructions:\n  1.Selct an answer using arrow keys up & down.");
 console.log("\n 2. Each Question carries one mark.");
 const quiz = await inquirer.prompt([
     {
